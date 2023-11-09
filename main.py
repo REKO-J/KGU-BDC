@@ -104,7 +104,7 @@ def ask(user_input):
 
     return message
 
-st.header("🤖경기대 빅데이터 캠프 ChatBot(Demo)")
+st.header("🤖경기대 빅데이터 센터 Chatbot(Demo)")
 st.markdown("[홈페이지](https://www.kgu-bigdata.com/default/)")
 
 if 'generated' not in st.session_state:

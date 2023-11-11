@@ -2,6 +2,8 @@ from openai import OpenAI
 from streamlit_chat import message
 import streamlit as st
 
+API_KEY = st.write(st.secrets['API_KEY'])
+
 client = OpenAI(
     api_key=API_KEY
 )

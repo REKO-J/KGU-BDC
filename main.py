@@ -3,7 +3,7 @@ from streamlit_chat import message
 import streamlit as st
 
 client = OpenAI(
-    api_key='ㅇㅇㅇㅇㅇ'
+    api_key=API_KEY
 )
 
 def ask(user_input):

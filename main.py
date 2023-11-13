@@ -111,10 +111,10 @@ st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")
 st.markdown("[홈페이지](https://www.kgu-bigdata.com/default/)")
 
 if 'generated' not in st.session_state:
-    st.session_state['generated'] = ['안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요.']
+    st.session_state['generated'] = ["안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요."]
 
 if 'past' not in st.session_state:
-    st.session_state['past'] = []
+    st.session_state['past'] = ["안녕하세요"]
 
 # 텍스트를 입력하여 봇과 대화 할 수 있는 폼 생성
 # clear_on_submit 옵션을 통해서 submit 하면 폼의 내용이 지워짐

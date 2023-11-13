@@ -111,7 +111,7 @@ st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")
 st.markdown("[홈페이지](https://www.kgu-bigdata.com/default/)")
 
 if 'generated' not in st.session_state:
-    st.session_state['generated'] = []
+    st.session_state['generated'] = ['안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요.']
 
 if 'past' not in st.session_state:
     st.session_state['past'] = []
@@ -133,5 +133,3 @@ if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
         message(st.session_state["generated"][i], key=str(i))
-
-st.session_state.generated.append('안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요.')

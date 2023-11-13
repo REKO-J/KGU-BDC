@@ -71,7 +71,7 @@ def ask(user_input):
                 <캠프 신청>
                 - 링크: https://booking.naver.com/booking/5/bizes/837802
                 <경기대 빅데이터센터 홈페이지>
-                - 링크: https://www.kgu-bigdata.com/default/)
+                - 링크: https://www.kgu-bigdata.com/default/
                 <카카오톡 플러스 친구>
                 - 링크: https://pf.kakao.com/_KAzxjxj
                 """

@@ -107,7 +107,7 @@ def ask(user_input):
 
     return message
 
-st.header("🤖경기대 빅데이터센터 Chatbot(Demo)")
+st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")
 st.markdown("[홈페이지](https://www.kgu-bigdata.com/default/)")
 
 if 'generated' not in st.session_state:
@@ -116,18 +116,22 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
+# 텍스트를 입력하여 봇과 대화 할 수 있는 폼 생성
+# clear_on_submit 옵션을 통해서 submit 하면 폼의 내용이 지워짐
 with st.form('form', clear_on_submit=True):
-    user_input = st.text_input('You: ', '', key='input')
-    submitted = st.form_submit_button('Send')
+    user_input = st.text_input(': ', '', key='input')
+    submitted = st.form_submit_button('전송')
 
+# 메시지를 입력 후 전송을 누를 경우
 if submitted and user_input:
     output = ask(user_input)
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
 
+# 저장된 대화 내용 보여주기
 if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
         message(st.session_state["generated"][i], key=str(i))
 
-ask("안녕하세요")
+st.wirte(ask("안녕하세요"))

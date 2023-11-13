@@ -79,11 +79,11 @@ def ask(user_input):
                 Q. 셔틀버스 탑승 예약을 해야하나요?
                 A. 예약하지 않아도 됩니다. 버스 운행시간 및 탑승위치는 ‘빅데이터캠프-무료 셔틀버스’ 페이지를 참고해주세요.
 
-                Q. 주말도 빅데이터센터 이용가능 한가요?
+                Q. 주말도 빅데이터 센터 이용 가능한가요?
                 A. 주말에는 운영하지 않고 있습니다.
 
-                Q. 프로젝트 및 데이터안심구역 방문일정을 변경하려면 어떻게 해야하나요?
-                A.빅데이터센터로 연락주시길바랍니다. Tel. 31-888-5204 / Email : hsh@kgu-bigdata.com
+                Q. 프로젝트 및 데이터 안심구역 방문 일정을 변경하려면 어떻게 해야하나요?
+                A.빅데이터센터로 연락주시길 바랍니다. Tel: 031-888-5200 / Email: hsh@kgu-bigdata.com
 
                 Q. 교육 신청 절차는 어떻게 되나요?
                 A. 예약 페이지를 통해 1일차 이론교육을 예약합니다. 데이터안심구역과 프로젝트는 이론교육에 참석한 학생분들을 대상으로 현장에서 접수합니다.
@@ -129,3 +129,5 @@ if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
         message(st.session_state["generated"][i], key=str(i))
+
+ask("안녕하세요")

@@ -108,6 +108,7 @@ def ask(user_input):
     return message
 
 st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")
+st.markdown("gpt-3.5-turbo를 기반으로 만들어진 챗봇입니다.")
 st.markdown("[홈페이지](https://www.kgu-bigdata.com/default/)")
 
 if 'generated' not in st.session_state:

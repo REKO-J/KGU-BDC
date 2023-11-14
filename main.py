@@ -139,7 +139,7 @@ for message in st.session_state.messages:
 # 마지막 메시지가 어시스턴트의 메시지가 아닌 경우 새 응답을 생성
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
-        with st.spinner("입력중..."):
+        with st.spinner("입력 중..."):
             st.write(ask(prompt))
             message = {"role": "assistant", "content": ask(prompt)}
             st.session_state.messages.append(message)  # 메시지 기록 응답에 추가

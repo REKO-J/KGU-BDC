@@ -121,19 +121,22 @@ st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")
 st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")
 st.info("'gpt-3.5-turbo'를 기반으로 만들어진 챗봇입니다.", icon="📃")
 
-if "messages" not in st.session_state.keys(): # Initialize the chat messages history
+# 채팅 메시지 기록 초기화
+if "messages" not in st.session_state.keys():
     st.session_state.messages = [
         {"role": "assistant", "content": "안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요."}
     ]
 
-if prompt := st.chat_input("Your question"): # Prompt for user input and save to chat history
+# 사용자 입력 요청하고 채팅 기록에 저장
+if prompt := st.chat_input("Your question"):
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-for message in st.session_state.messages: # Display the prior chat messages
+# 이전 채팅 메시지 표시
+for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
-# If last message is not from assistant, generate a new response
+# 마지막 메시지가 어시스턴트의 메시지가 아닌 경우 새 응답을 생성
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
         with st.spinner("입력중..."):

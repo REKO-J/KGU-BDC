@@ -118,7 +118,7 @@ def ask(user_input):
     return message
 ############################################################
 st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")
-st.title("Chatbot(Demo)")
+st.title("경기대 빅데이터센터 Chatbot(Demo)")
 st.info("'gpt-3.5-turbo'를 기반으로 만들어진 챗봇입니다.", icon="📃")
 ############################################################
 # st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")

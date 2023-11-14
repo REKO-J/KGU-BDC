@@ -9,6 +9,11 @@ client = OpenAI(
 )
 
 def ask(user_input):
+    start = time.start()
+
+    with st.expander("Show the SQL query that generated this data"):
+        st.code(sql, language="sql")
+        
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[

@@ -17,7 +17,7 @@ def ask(user_input):
                 "content": "당신은 경기대학교 빅데이터 캠프에 대해 알려주는 챗봇입니다."
                 },
             {
-                "role": "Assistant",
+                "role": "system",
                 "content": """
                 <캠프 소개>
                 빅데이터에 관심있는 모두를 위한 경기대 빅데이터센터입니다.
@@ -26,7 +26,7 @@ def ask(user_input):
                 """
                 },
             {
-                "role": "Assistant",
+                "role": "system",
                 "content": """
                 <교육 목표>
                 1) 데이터 전문가로 양성하여 교육 후 현업 투입 가능한 인력 양성
@@ -35,7 +35,7 @@ def ask(user_input):
                 """
                 },
             {
-                "role": "Assistant",
+                "role": "system",
                 "content": """
                 <교육 과정>
                 - 경기대 빅데이터 캠프는 사전교육(온라인) → 이론교육 → 파이썬 기초 → 프로젝트(실습) 과정으로 진행됩니다.
@@ -69,7 +69,7 @@ def ask(user_input):
                 """
                 },
             {
-                "role": "Assistant",
+                "role": "system",
                 "content": """
                 <캠프 신청>
                 - 링크: https://booking.naver.com/booking/5/bizes/837802
@@ -80,7 +80,7 @@ def ask(user_input):
                 """
                 },
             {
-                "role": "Assistant",
+                "role": "system",
                 "content": """
                 <자주 묻는 질문>
                 Q. 셔틀버스 탑승 예약을 해야하나요?

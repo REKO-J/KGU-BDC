@@ -8,6 +8,7 @@ client = OpenAI(
     api_key=API_KEY
 )
 
+@st.cache_data
 def ask(user_input):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",

@@ -119,9 +119,7 @@ def ask(user_input):
 
 st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")
 st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")
-st.markdown("'gpt-3.5-turbo'를 기반으로 만들어진 챗봇입니다.")
 st.info("'gpt-3.5-turbo'를 기반으로 만들어진 챗봇입니다.", icon="📃")
-st.markdown("[홈페이지](https://www.kgu-bigdata.com/default/)")
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = ["안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요."]

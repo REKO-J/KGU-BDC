@@ -2,20 +2,6 @@ from openai import OpenAI
 from streamlit_chat import message
 import streamlit as st
 
-############################################################
-st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
-    page_icon="🧊",
-    layout="centered",
-    initial_sidebar_state="auto",
-    menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    }
-)
-############################################################
-
 API_KEY = st.secrets['API_KEY']
 
 client = OpenAI(
@@ -131,7 +117,8 @@ def ask(user_input):
 
     return message
 ############################################################
-
+st.title("Chat with the Streamlit docs, powered by LlamaIndex 💬🦙")
+st.info("Check out the full tutorial to build this app in our [blog post](https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/)", icon="📃")
 ############################################################
 # st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")
 # st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")

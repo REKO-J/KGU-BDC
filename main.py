@@ -107,7 +107,7 @@ def ask(user_input):
                 "content": f'{user_input}'
                 },
             ],
-        temperature=1,
+        temperature=0.7,
         max_tokens=512,
         top_p=1,
         frequency_penalty=0,

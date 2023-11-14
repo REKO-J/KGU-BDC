@@ -140,7 +140,6 @@ for message in st.session_state.messages:
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
         with st.spinner("입력중..."):
-            response = ask(prompt)
-            st.write(response)
-            message = {"role": "assistant", "content": response}
-            st.session_state.messages.append(message) # Add response to message history
+            st.write(ask(prompt))
+            message = {"role": "assistant", "content": ask(prompt)}
+            st.session_state.messages.append(message)  # 메시지 기록 응답에 추가

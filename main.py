@@ -1,7 +1,6 @@
 import streamlit as st
 from openai import OpenAI
 from streamlit_chat import message
-import time
 
 API_KEY = st.secrets['API_KEY']
 
@@ -10,13 +9,6 @@ client = OpenAI(
 )
 
 def ask(user_input):
-    ##### 시간측정 #####
-    start = time.start()
-
-    with st.expander("Show the SQL query that generated this data"):
-        st.code(sql, language="sql")
-    ####################
-    
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -122,10 +114,6 @@ def ask(user_input):
         presence_penalty=0
     )
     result = response.choices[0].message.content
-
-    ##### 시간 측정 #####
-    st.info(f"⏱️ Data loaded in {time.time() - start_time:.2f} seconds")
-    ####################
     
     return result
 

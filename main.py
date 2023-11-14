@@ -8,8 +8,8 @@ client = OpenAI(
     api_key=API_KEY
 )
 
-@st.cache_data(show_spinner=False)
 def ask(user_input):
+    @st.cache_data(show_spinner=False)
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[

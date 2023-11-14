@@ -113,9 +113,9 @@ def ask(user_input):
         frequency_penalty=0,
         presence_penalty=0
     )
-    message = response.choices[0].message.content
+    result = response.choices[0].message.content
 
-    return message
+    return result
 ############################################################
 st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")
 st.header("경기대 빅데이터센터 Chatbot(Demo)")

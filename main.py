@@ -18,7 +18,7 @@ def ask(user_input):
                 "content": "당신은 경기대학교 빅데이터센터에 대해 알려주는 챗봇입니다."
                 },
             {
-                "role": "system",
+                "role": "assistant",
                 "content": """
                 <캠프 소개>
                 빅데이터에 관심있는 모두를 위한 경기대 빅데이터센터입니다.

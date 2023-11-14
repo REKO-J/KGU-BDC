@@ -117,8 +117,17 @@ def ask(user_input):
 
     return message
 ############################################################
-st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaIndex", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
-
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 ############################################################
 # st.image("https://www.kgu-bigdata.com/default/img/main/logo.png")
 # st.header("🤖 경기대 빅데이터센터 Chatbot(Demo)")

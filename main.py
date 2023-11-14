@@ -11,7 +11,7 @@ client = OpenAI(
 
 def ask(user_input):
     ##### 시간측정 #####
-    start = time.time()
+    start = time.start()
 
     with st.expander("Show the SQL query that generated this data"):
         st.code(sql, language="sql")

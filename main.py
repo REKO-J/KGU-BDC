@@ -14,7 +14,7 @@ def ask(user_input):
         messages=[
             {
                 "role": "system",
-                "content": "당신은 경기대학교 빅데이터 캠프에 대해 알려주는 챗봇입니다."
+                "content": "당신은 경기대학교 빅데이터센터에 대해 알려주는 챗봇입니다."
                 },
             {
                 "role": "system",
@@ -124,7 +124,7 @@ st.info("'gpt-3.5-turbo'를 기반으로 만들어진 챗봇입니다.", icon="�
 # 채팅 메시지 기록 초기화
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [
-        {"role": "assistant", "content": "안녕하세요! 빅데이터 캠프에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요."}
+        {"role": "assistant", "content": "안녕하세요! 경기대 빅데이터센터에 대해 궁금한 점이 있으신가요? 도움이 필요하시면 언제든지 말씀해주세요."}
     ]
 
 # 사용자 입력 요청하고 채팅 기록에 저장

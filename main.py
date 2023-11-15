@@ -9,16 +9,19 @@ client = OpenAI(
     api_key=API_KEY
 )
 
-# JSON 파일 열기
-with open('./data.json', 'r') as file:
-    data = json.load(file)
+def load_data():
+    # JSON 파일 열기
+    with open('./data.json', 'r') as file:
+        data = json.load(file)
+        
+        return data['data']
 
 # 질의응답 함수
 @st.cache_data(show_spinner=False)
 def ask(user_input):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        messages= data['data'] + [
+        messages= load_data() + [
             {
                 "role": "user",
                 "content": f'{user_input}'

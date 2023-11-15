@@ -10,7 +10,6 @@ client = OpenAI(
 )
 
 # JSON 파일 열기
-@st.cache_data(show_spinner=False)
 with open('./data.json', 'r') as file:
     data = json.load(file)
 

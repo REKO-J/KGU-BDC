@@ -1,6 +1,5 @@
 # KGU-BDC
-KGU-Big Data Center Chatbot
-링크: https://kgu-bdc.streamlit.app/
+KGU-Big Data Center Chatbot(링크: https://kgu-bdc.streamlit.app/)
 
 ## 개선 예정
 1. 데이터셋 구축(json)

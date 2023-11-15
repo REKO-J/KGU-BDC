@@ -18,7 +18,7 @@ with open('./data.json', 'r') as file:
 def ask(user_input):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        messages=[
+        messages=data['data'] + [
             {
                 "role": "user",
                 "content": f'{user_input}'

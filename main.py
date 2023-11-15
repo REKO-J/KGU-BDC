@@ -24,7 +24,7 @@ def ask(user_input):
                 "content": f'{user_input}'
             }
         ],
-        temperature=0.8,
+        temperature=0.7,  # 0.5 ~ 1.0(높을수록 창의적인 답변)
         max_tokens=512,
         top_p=1,
         frequency_penalty=0,

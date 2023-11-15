@@ -1,5 +1,5 @@
 # KGU-BDC
-KGU-BigDataCenter Chatbot
+KGU-Big Data Center Chatbot
 
 ## 개선 예정
 1. 데이터셋 구축(json)

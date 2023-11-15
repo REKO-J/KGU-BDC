@@ -25,7 +25,7 @@ def ask(user_input):
             }
         ],
         temperature=0.7,  # 0.5 ~ 1.0(높을수록 창의적인 답변)
-        max_tokens=512,   # 256 ~ 2048(생성되는 텍스트 최대 길이)
+        max_tokens=512,   # 256 ~ 2048(생성되는 텍스트의 최대 길이)
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0

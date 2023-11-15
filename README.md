@@ -1,5 +1,5 @@
 # KGU-BDC
-KGU-Big Data Center Chatbot \n
+KGU-Big Data Center Chatbot
 링크: https://kgu-bdc.streamlit.app/
 
 ## 개선 예정

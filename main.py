@@ -10,10 +10,11 @@ client = OpenAI(
 )
 
 # JSON 파일 열기
+@st.cache_data(show_spinner=False)
 with open('./data.json', 'r') as file:
-    @st.cache_data(show_spinner=False)
     data = json.load(file)
 
+# 질의응답 함수
 @st.cache_data(show_spinner=False)
 def ask(user_input):
     response = client.chat.completions.create(

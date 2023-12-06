@@ -3,8 +3,7 @@ KGU-Big Data Center Chatbot <br/>
 
 App: https://kgu-bdc.streamlit.app/
 
-![Uploading image.png…]()
-
+![image](https://github.com/REKO-J/KGU-BDC/assets/117628869/8bb873ac-3f71-4230-909a-c4357674be23)
 
 ## 개선 예정
 ### 1. 데이터셋 구축
